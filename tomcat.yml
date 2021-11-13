@@ -49,8 +49,8 @@
            shell: rm -rf /home/{{ansible_ssh_user}}/tomcat/apache-tomcat-{{tomcat_version}}.tar.gz
 
 
-           # - name: Renaming tomcat home
-           #shell: mv /home/{{ansible_ssh_user}}/tomcat/apache-tomcat-{{tomcat_version}}   /home/{{ansible_ssh_user}}/tomcat/apache-tomcat
+         - name: Renaming tomcat home
+           shell: mv /home/{{ansible_ssh_user}}/tomcat/apache-tomcat-{{tomcat_version}}   /home/{{ansible_ssh_user}}/tomcat/apache-tomcat
 
 
          - name: Starting tomcat
